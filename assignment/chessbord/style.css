@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.board {
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    margin: 30px auto;
+   
+    }
+    
+
+    .black:nth-child(2n){
+        background-color: black;
+
+    }
+    .white:nth-child(2n+1){
+        background-color: black;
+
+    }
+
+   

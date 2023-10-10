@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+/* Define the grid container and the number of columns */
+*{
+    background-color: rgba(203, 226, 224, 0.805);
+}
+
+#grid,div{
+    gap: 10px;
+}
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100px 1fr 100px ;
+  grid-template-rows: 100px 1fr 100px;
+  grid-gap: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px ;
+  
+}
+
+.header{
+    grid-column: 2/span 3;
+    grid-row: 1;
+    background-color: rgba(127, 255, 212, 0.819);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.left{
+    grid-column: 1;
+    grid-row: 1/span 3;
+    background-color: rgba(235, 141, 204, 0.667);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.main{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(177, 107, 107, 0.8);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    
+
+}
+.right{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: rgba(212, 0, 0, 0.695);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.footer{
+    grid-column: 2/span 3;
+    grid-row: 3;
+    background-color: rgb(184, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* #boxg{
+    background-color: aliceblue;
+} */
+/* Define the grid items and their colors */
+
+</style>
+</head>
+<body>
+
+<!-- Create the grid container and the grid items -->
+<div class="grid-container">
+  <div id="grid" class="header">
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+  </div>
+  <div id="grid" class="left">
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+  </div>
+  <div id="grid" class="main">
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+   <div id="boxg"></div>
+  </div>
+  <div id="grid" class="right">
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+  </div>
+  <div id="grid" class="footer">
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+    <div id="boxg"></div>
+  </div>
+</div>
+
+</body>
+</html>

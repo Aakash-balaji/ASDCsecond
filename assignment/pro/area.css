@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    height: 100vh;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+    grid-template-rows: repeat(11,auto);
+    gap: 10px;
+    background-color: #cbe9b2;
+    margin: 80px auto;
+
+}
+
+.con{
+    grid-template-areas:
+    "time s1 s2 s3 s4 s5 s6 s7"
+    "t1 tk1 tk1 tk4 tk5 tk5 tk9 tk9"
+    "t2 tk1 tk1 tk4 b1 b1 tk9 tk9"
+    "t3 b2 b2 tk4 tk6 tk6 tk9 tk9"
+    "t4 tk2 tk2 tk2 tk6 tk6 tk9 tk9 "
+    "t5 tk2 tk2 tk2 tk6 tk6 tk9 tk9"
+    "t6 b b b b b b b "
+    "t7 tk7 tk7 nn nn nn tk10 tk10"
+    "t8 tk7 tk7 tk8 tk8 tk8 tk10 tk10"
+    "t9 tk7 tk7 tk8 tk8 tk8 tk10 tk10";
+}
+
+.grid-items{
+    background-color: #ba6868;
+}
+
+.st{grid-area: time;}
+.st1{grid-area: s1;}
+.st2{grid-area: s2;}
+.st3{grid-area: s3;}
+.st4{grid-area: s4;}
+.st5{grid-area: s5;}
+.st6{grid-area: s6;}
+.st7{grid-area: s7;}
+
+.st8{grid-area: t1;}
+.st9{grid-area: t2;}
+.st10{grid-area: t3;}
+.st11{grid-area: t4;}
+.st12{grid-area: t5;}
+.st13{grid-area: t6;}
+.st14{grid-area: t7;}
+.st15{grid-area: t8;}
+.st16{grid-area: t9;}
+/* .st17{grid-area: t10;} */
+
+.st18{grid-area: b;}
+.st19{grid-area: b1;}
+.st20{grid-area: b2;}
+.st21{grid-area: tk1;}
+.st22{grid-area: tk2;}
+.st23{grid-area: tk4;}
+.st24{grid-area: tk5;}
+.st25{grid-area: tk6;}
+.st26{grid-area: tk7;}
+.st27{grid-area: tk8;}
+.st28{grid-area: tk9;}
+.st29{grid-area: tk10;}

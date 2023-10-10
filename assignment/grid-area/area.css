@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    background-color: teal;
+    gap: 20px;
+    grid-template-areas: "title title"
+                        "manu main"
+                        "manu footer";
+}
+
+.title{
+    grid-area: title;
+    background-color: aqua;
+}
+
+.main{
+    grid-area: main;
+    background-color: brown;
+}
+
+.manu{
+    grid-area: manu;
+    background-color: blue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
